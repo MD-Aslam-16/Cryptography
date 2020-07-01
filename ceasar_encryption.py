@@ -9,7 +9,7 @@ def encrypt(text,s):
   
         # Encrypt uppercase characters 
         if (char.isupper()): 
-            result += chr((ord(char) + s-65) % 26 + 65) 
+            result += chr((ord(char) + s - 65) % 26 + 65) 
   
         # Encrypt lowercase characters 
         else: 
@@ -18,7 +18,7 @@ def encrypt(text,s):
     return result 
   
 #check the above function 
-text = "Mohamed Aslam"
+text = "Asmetaa"
 s = 4
 print "Text  : " + text 
 print "Shift : " + str(s) 

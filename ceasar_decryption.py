@@ -7,19 +7,19 @@ def encrypt(text,s):
     for i in range(len(text)): 
         char = text[i] 
   
-        # Decrypt uppercase characters 
+        # Encrypt uppercase characters 
         if (char.isupper()): 
             result += chr((ord(char) - s - 65) % 26 + 65) 
   
-        # Decrypt lowercase characters 
+        # Encrypt lowercase characters 
         else: 
             result += chr((ord(char) - s - 97) % 26 + 97) 
   
     return result 
   
 #check the above function 
-text = "QsleqihrEwpeq"
+text = "Ewqixee"
 s = 4
-print "Cipher  : " + text 
+print "Text  : " + text 
 print "Shift : " + str(s) 
-print "Text: " + encrypt(text,s) 
+print "Cipher: " + encrypt(text,s) 
