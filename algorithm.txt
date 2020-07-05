@@ -1,0 +1,21 @@
+Light weight Sensor network security algorithm
+
+1. Algorithm get a 512 bit length unmeaningful string (a character come repeatedly)
+2.From that string extract  the count of repeated character(First X  only used)
+3. Eg :if X is 5,  15 22 8 19 11
+4. Execute translation cypher technique for the text using the above key.
+       1st char ising 15
+        2nd char using 22
+       3rd char using 8
+       4th char using 19
+       5th char using   11
+        6th char using 15 ....... and so on
+5. we have to use a spl value for the space ie the encrypted characters of the characters befor and after space is repeats 1 time
+   eg: text : a e
+         encrypted text: g h
+          space is represented as : gghh
+6. The encryption pattern will use the reverse key after encrypting N number of characters.
+
+In the  above algorithm the values of X, N and length of unmeaningful string are fixed before deploying a Sensor in the field.
+The binding process of sensor with head node is initiated by the node it self.
+ 
