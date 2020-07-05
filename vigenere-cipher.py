@@ -7,12 +7,13 @@
 # the length of original text 
 def generateKey(string, key): 
 	key = list(key) 
-	if len(string) == len(key): 
+	print key
+	if len(string) == len(key):
 		return(key) 
 	else: 
 		for i in range(len(string) -
 					len(key)): 
-			key.append(key[i % len(key)]) 
+			print key.append(key[i % len(key)]) 
 	return("" . join(key)) 
 	
 # This function returns the 
@@ -41,8 +42,8 @@ def originalText(cipher_text, key):
 	
 # Driver code 
 if __name__ == "__main__": 
-	string = "Aslam"
-	keyword = "AYUSH"
+	string = "HELLO"
+	keyword = "ASLAM"
 	key = generateKey(string, keyword) 
 	cipher_text = cipherText(string,key) 
 	print("Ciphertext :", cipher_text) 
